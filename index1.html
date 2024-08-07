@@ -207,11 +207,26 @@
             font-size: large;
         }
     }
+    audio{
+        z-index: 1;
+        position: absolute;
+        top: 70vh;
+        left: 20vw;
+    }
+    @media  screen and (min-width:770px) {
+        audio{
+            position: absolute;
+            left: 42vw;
+        }
+    }
 
     </style>
 </head>
 <body>
     <h1>Music beat</h1>
+    <audio controls>
+        <source src="./Adiye- [MyMp3Bhojpuri.In].mp3">
+    </audio>
     <div class="container">
         <div class="a"></div>
         <div class="b"></div>
