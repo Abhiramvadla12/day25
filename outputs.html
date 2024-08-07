@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<style>
+    .bg{
+        border: 5px solid blue;
+        height: 90vh;
+        background: linear-gradient(-60deg,blue,aqua 80%);
+        box-shadow: 5px 5px 10px aqua;
+        display: flex;
+        position: relative;   
+    }
+    a{
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        color:tomato;
+        text-decoration: none;
+        font-weight: bolder;
+        text-shadow: 2px 2px 5px white;
+    }
+    .task1,.task-2{
+        border: 5px solid blue;
+        height: 20vh;
+        width: 20vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px white;
+    }
+    .task1{
+        position:absolute;
+        top: 25vh;
+        left: 37vw;
+        animation: change 3s ease-in-out 0s infinite;
+    }
+    .task-2{
+        position: absolute;
+        top: 50vh;
+        left: 37vw;
+        animation: change 3s ease-in-out 0s infinite;
+    }
+    @keyframes change {
+        from{
+            background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+            transform: scale(0.5);
+        }
+        to{
+            background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+            transform: scale(1);
+        }
+    }
+    @media screen and (min-width:770px){
+       .task1{
+           left: 45vw;
+       } 
+       .task-2{
+        left: 45vw;
+       }
+    }
+</style>
+<body>
+    <div class="bg">
+        <div class="task1">
+            <a href="./index.html">Task-1</a>
+        </div>
+        <div class="task-2">
+            <a href="./index1.html">Task-2</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>

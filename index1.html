@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music DJ</title>
+    <style>
+        body{
+            animation: back_ground 40s ease-in-out 2s infinite;
+            background-size: 50%;
+        }
+        .container{
+            height: 40vh;
+            width: 55vw;
+            border:5px solid red;
+            box-shadow: 5px 5px 10px red;
+            border-radius:10vw;
+            position: relative;
+            top: 20vh;
+            left: 22%;
+            background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+
+        }
+        h1{
+        height: 10vh;
+        width: 30vw;
+        border: 5px solid blue;
+        color: white;
+        text-align: center;
+        background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+        box-shadow: 2px 2px 10px aqua;
+        position: absolute;
+        left: 35vw;
+        top:0vh;
+        margin-bottom: 5vh;
+        border-radius: 5vw;
+
+    }
+        @keyframes back_ground {
+            0%{ transition: all 3s;
+                background-image: url('./wolf.jpg');
+               
+            }
+            25%{
+                transition: all 3s;
+                background-image: url('./rabbit.jpeg');
+               
+            }
+            25%{
+                transition: all 3s;
+                background-image: url('./cat.jpeg');
+               
+            }
+            50%{
+                transition: all 3s;
+                background-image: url('./wolf.jpg');
+               
+            }
+
+        }
+        .a,.b,.c,.d,.e,.f,.g,.h,.i,.j,.k{
+            height: 5vh;
+            width: 1vw;
+            border: 2px solid;
+            border-radius: 1vw;
+        }
+        .a,.b,.c{
+            background: linear-gradient(#2E3192,#1BFFFF);
+        }
+        .d,.e,.f{
+            background: linear-gradient(#662D8C,#ED1E79);
+        }
+        .i,.h,.g{
+            background: linear-gradient(#FF512F,#DD2476);
+        }
+        .c,.g{
+            animation: change1 2s ease-in-out 3s infinite;
+        }
+        .d,.f{
+            animation: change2 2s ease-in 3s infinite;
+        }
+        .a,.i{
+            animation: border 2s ease-in-out 3s infinite;
+        }
+        .b,.h{
+            animation: change3 2s ease-in-out 3s infinite;
+        }
+        .e{
+            animation: change4 2s ease-in-out 3s infinite;
+        }
+        @keyframes border {
+            0%{
+                transition: all 3s;
+               height: 5vh;
+            }
+            25%{
+                transition: all 3s;
+                height: 3vh;
+            }
+            55%{
+                transition: all 3s;
+               height: 2vh;
+            }
+            75%{
+                transition: all 3s;
+                height: 3vh;
+            }
+            100%{
+                transition: all 3s;
+               height: 5vh;
+            }
+        }
+        @keyframes change1 {
+            0%{
+                transition: all 3s;
+                height: 5vh;
+            }
+            25%{
+                transition: all 3s;
+                height: 10vh;
+            }
+            50%{
+                transition: all 3s;
+                height: 15vh; 
+            }
+            75%{
+                transition: all 3s;
+                height: 10vh;
+            }
+            100%{
+                transition: all 3s;
+                height: 5vh;
+            }
+        }
+        @keyframes change2 {
+            0%{
+                transition: all 3s;
+                height: 5vh;
+            }
+            25%{
+                transition: all 3s;
+                height: 7vh;
+            }
+            50%{
+                transition: all 3s; 
+                height: 10vh;
+            }
+            75%{
+                transition: all 3s;
+                height: 7vh;
+            }
+            100%{
+                transition: all 3s;
+                height: 5vh;
+            }
+        }
+        @keyframes change3 {
+            0%{
+                transition: all 3s;
+                height: 5vh;
+            }
+            25%{
+                transition: all 3s;
+                height: 2vh;
+            }
+            50%{
+                transition: all 3s;
+                height: 4vh;
+            }
+            75%{
+                transition: all 3s;
+                height: 2vh;
+            }
+            100%{
+                transition: all 3s;
+                height: 5vh;
+            }
+        }
+        @keyframes change4 {
+            0%{
+                transition: all 3s;
+                height: 5vh;
+            }
+            25%{
+                transition: all 3s;
+                height: 15vh;
+            }
+            50%{
+                transition: all 3s;
+                height: 20vh;
+            }
+            75%{
+                transition: all 3s;
+                height: 15vh;
+            }
+            100%{
+                transition: all 3s;
+                height: 5vh;
+            }
+        }
+        @media screen and (max-width:770px) {
+        h1{
+            font-size: large;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Music beat</h1>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+        
+    </div>
+</body>
+</html>

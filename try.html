@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+    }
+    div{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        transition: background-color 4s;
+        animation-name: color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+    }
+   /* div:hover{
+        background-color: aqua;
+    }*/
+    @keyframes color{
+        from{
+            background-color: blueviolet;
+            transform: scale(0.5);
+            transform: rotate(120deg);
+        }
+        to{
+            background-color: brown;
+            transform: scale(1);
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

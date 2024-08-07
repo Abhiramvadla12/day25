@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+    <title>google dots</title>
+</head>
+<style>
+    body{
+        background-image: url('./galaxy.jpg');
+        animation: back_ground 40s ease-in-out 2s infinite;
+    }
+    .container{
+        height: 50vh;
+        width: 70vw;
+        border: 10px solid aqua;
+        position:relative;
+        left: 16vw;
+        top: 15vh;
+        background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+        box-shadow: 4px 4px 10px aqua;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10vw;
+
+    }
+    h1{
+        height: 10vh;
+        width: 30vw;
+        border: 5px solid blue;
+        color: white;
+        text-align: center;
+        background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+        box-shadow: 2px 2px 10px aqua;
+        position: absolute;
+        left: 35vw;
+        top:0vh;
+        margin-bottom: 5vh;
+        border-radius: 5vw;
+
+    }
+    .dot1{
+        height: 50px;
+        width:50px;
+        border: 5px solid lightblue;
+        border-radius: 50%;
+        background-color: blue;
+        box-shadow: 2px 2px 10px blue;
+        
+        
+    }
+    .dot2{
+        height: 50px;
+        width:50px;
+        border: 5px solid lightcoral;
+        border-radius: 50%;
+        background-color: red;
+        box-shadow: 2px 2px 10px red;
+        
+    }
+    .dot3{
+        height: 50px;
+        width:50px;
+        border: 5px solid lightyellow;
+        border-radius: 50%;
+        background-color: yellow;
+        box-shadow: 2px 2px 10px yellow;
+       
+    }
+    .dot4{
+        height: 50px;
+        width:50px;
+        border: 5px solid lightgreen;
+        border-radius: 50%;
+        background-color:rgb(21, 237, 21);
+        box-shadow: 2p 2px 10px rgb(9, 238, 9);
+        
+    }
+    .dots{
+        animation: wave 5s infinite;
+        
+    }
+    .container div:nth-child(1){
+        animation-delay: 1s;
+        transition:all 2s;
+    }
+    .container div:nth-child(2){
+        animation-delay: 1.4s;
+        transition: all 2s;
+    }
+    .container div:nth-child(3){
+        animation-delay: 1.8s;
+        transition: all 2s;
+    }
+    .container div:nth-child(4){
+        animation-delay: 2.2s;
+        transition: all 2s;
+    }
+    @keyframes wave {
+        0%{
+           transform: translate(0px,-0px);
+        }
+        50%{
+            transform:translate(0px,-70px) ;
+        }
+        100%{
+           transform: translate(0px,-0px); 
+ 
+        }
+        
+    }
+    @keyframes back_ground {
+        0%{ transition: all 3s;
+                background-image: url('./galaxy.jpg');
+                background-size: contain;
+            }
+            25%{
+                transition: all 3s;
+                background-image: url('./galaxy-1.jpeg');
+                background-size: contain;
+            }
+            50%{
+                transition: all 3s;
+                background-image: url('./galaxy-2.jpeg');
+                background-size: contain;
+            }
+            100%{
+                transition: all 3s;
+                background-image: url('./galaxy-3.jpeg');
+                background-size: contain;
+            }
+    }
+    @media screen and (max-width:770px) {
+        h1{
+            font-size: large;
+        }
+    }
+</style>
+<body>
+    <h1>Google dots loading</h1>
+    <div class="container">
+        <div class="dot1 dots"></div>
+        <div class="dot2 dots"></div>
+        <div class="dot3 dots"></div>
+        <div class="dot4 dots"></div>
+
+    </div>
+</body>
+</html>
