@@ -1,0 +1,260 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outputs of tasks</title>
+    <style>
+        .container{
+            background-color: black;
+            border: 2px solid blue;
+            height: 130vh;
+            animation: images 3s linear 0s infinite ;
+            position: relative;
+            
+        }
+        .outputs{
+            width:20vw;
+            height: 70vh;
+            position: absolute;
+            left: 40vw;
+            top:10vh;
+            
+        }
+        .tasks1{
+            height: 250px;
+            width: 250px;
+            border: 2px solid blue;
+            background-color: rgba(11, 59, 233, 0.655);
+            color: blue;
+            border-radius: 50%;
+            margin: 50px;
+            animation: change 10s ease 0s infinite;
+            
+            
+        }
+        .tasks2{
+            height: 250px;
+            width: 250px;
+            border: 2px solid blue;
+            background-color: rgba(11, 59, 233, 0.655);
+            color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 54vh;
+            margin: 50px;
+            animation: change 10s ease 0s infinite;
+        }
+        .task-1_border{
+            border: 10px solid rgb(28, 206, 234);
+            border-top: 10px solid rgb(18, 2, 123);
+            height: 340px;
+            width: 340px;
+            border-radius: 50%;
+            animation: spin 1s linear 0s infinite;
+            position: relative;
+        }
+        .task-2_border{
+            border: 10px solid rgb(28, 206, 234);
+            border-bottom: 10px solid rgb(18, 2, 123);
+            height: 340px;
+            width: 340px;
+            border-radius: 50%;
+            animation: spin 1s linear 2s infinite;
+        }
+        a{
+            font-size: 3em;
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            left: 8vw;
+            top: 12vh;
+            display: inline-block;
+            width: 8vw;
+        }
+        #abhi{
+            font-size: 3em;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            width: 8vw;
+            position: absolute;
+            left: 3vw;
+            top: 5vh;
+            text-align: center;
+        }
+        .visual{
+            width: 20vw;
+            height: 30vh;
+            position: absolute;
+            left: 5vw;
+            top: 5vh;
+        }
+        .yellow{
+            border: 2px solid yellow;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: yellow;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .green{
+            border: 2px solid  rgb(34, 255, 0);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: rgb(40, 229, 40);
+            position: absolute;
+            left: 12vw;
+            top: 4vh;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .blue{
+            border: 2px solid blue;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color:blue;
+            position: absolute;
+            left: 3vw;
+            top: 20vh;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .visual-1{
+            width: 20vw;
+            height: 30vh;
+            position: absolute;
+            right: 5vw;
+            bottom: 10vh;
+        }
+        @keyframes pulse {
+            0%{transform: scale(1);}
+            50%{transform: scale(2);}
+            100%{transform: scale(1);}
+        }
+        @keyframes spin {
+            0%{
+                border-left: 10px solid rgb(18, 2, 123);
+            }
+            25%{
+                border-top: 10px solid rgb(18, 2, 123);
+            }
+            50%{
+                border-right: 10px solid rgb(18, 2, 123);
+            }
+            100%{
+                border-bottom: 10px solid rgb(18, 2, 123);
+            }
+        }
+        @keyframes change {
+            0%{
+                background-color: red;
+            }
+            10%{
+                background-color: rgba(240, 61, 6, 0.818);
+            }
+            20%{
+                background-color: rgb(176, 146, 10);
+            }
+            30%{
+                background-color: rgb(0, 255, 47);
+            }
+            40%{
+                background-color: rgb(47, 0, 255);
+            }
+            50%{
+                background-color: rgb(204, 0, 255);
+            }
+            60%{
+                background-color: rgb(255, 0, 174);
+            }
+            70%{
+                background-color: rgb(255, 0, 0);
+            }
+            80%{
+                background-color: rgb(255, 123, 0);
+            }
+            90%{
+                background-color: rgb(0, 255, 55);
+            }
+
+        }
+        @media screen and (max-width:770px){
+            .container{
+                width: 110vw;
+            }
+            @keyframes pulse {
+                0%{
+                    transform: scale(0.5);
+                }
+                100%{
+                    transform: scale(1);
+                }
+                
+            }
+            .task-1_border{
+                height: 200px;
+                width: 200px;
+                top: 0px;
+                
+            }
+            .task-2_border{
+                height: 200px;
+                width: 200px;
+            }
+            .tasks1{
+                height: 120px;
+                width: 120px;
+                position: absolute;
+                text-align: center;
+                
+            }
+            .tasks2{
+                height: 120px;
+                width: 120px;
+                position: absolute;
+                top: 40vh;
+            }
+            a{
+                font-size: large;
+                position:absolute;
+                left: 30px;
+            }
+            #abhi{
+                font-size: large;
+            }
+            .visual-1{
+                display: none;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="visual">
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+        </div>
+        <div class="outputs">
+            <div class="task-1_border"><div class="tasks1"><a href="https://github.com/Abhiramvadla12/day25/blob/master/index.html" target="_self">code of task1</a></div></div><br>
+            <div class="task-2_border"><div class="tasks2"><a href="https://github.com/Abhiramvadla12/day25/blob/master/index1.html" id="abhi" target="_self">code of task2</a></div></div>
+        </div>
+        <div class="visual-1">
+            <div class="yellow"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
